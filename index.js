@@ -10,7 +10,7 @@ const getScraperURL = (apiKey) => `http://api.scraperapi.com?api_key=${apiKey}&a
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.send('Welcome to API');
+  res.send('Welcome to Amazon.in scraper API');
 });
 
 app.get('/products/:productId', async (req, res) => {
